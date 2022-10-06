@@ -30,6 +30,7 @@ export default {
 
   methods: {
     addToCart() {
+      this.$store.commit('addCartItem', this.product) // mutations 'addCartItem' 호출
       this.$router.push('/cart')
     }
   }
